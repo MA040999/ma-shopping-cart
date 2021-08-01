@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Products from "./components/Products";
 import Cart from "./components/Cart";
-import app from "../axiosConfig";
+import app from "./axiosConfig";
 
 export const SelectedProductsContext = React.createContext([[], () => []]);
 export const QuantitiesContext = React.createContext([[], () => []]);
