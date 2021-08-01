@@ -1,0 +1,157 @@
+.product {
+  width: 220px;
+  height: 290px;
+  display: inline-block;
+  /* border: 1px solid #b8b8b8; */
+  vertical-align: top;
+  margin: 7px;
+  background-color: white;
+}
+
+.logo {
+  color: blue;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+
+.parent {
+  display: flex;
+  /* height: 300px; */
+  vertical-align: top;
+}
+
+.pic {
+  width: 200px;
+  /* Or whatever */
+  height: 200px;
+  /* Or whatever */
+  margin: 0 auto;
+  /* Magic! */
+}
+
+.shadow {
+  box-shadow: 5px 5px 10px rgb(153, 153, 153);
+}
+
+.price {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2e368f;
+  text-align: left;
+  padding-left: 10px;
+  /* margin: 5px 0; */
+}
+
+.stock {
+  font-size: 20px;
+  line-height: 24px;
+  color: teal;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.des {
+  padding-top: 10px;
+  margin: auto;
+  width: 200px;
+  font-size: 14px;
+  color: #6a6a6a;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  width: 65%;
+  height: 80vh;
+  overflow-y: auto;
+  display: inline-block;
+}
+
+.bill {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+table,
+th,
+tr,
+td {
+  border-collapse: collapse;
+  /* border: 1px solid #b8b8b8; */
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+.txt {
+  border: none;
+  width: 40px;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+.button-control {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  margin: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  display: flex;
+  justify-content: flex-end;
+
+  width: 50%;
+}
+
+.item {
+  outline: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.order-btn {
+  font-family: Poppins;
+  font-weight: bold;
+
+  font-size: 15px;
+  background-color: white;
+  padding: 0.8em;
+  border-radius: 0.7em;
+  border: 1px rgb(22, 96, 214) solid;
+  transition: all 0.2s;
+}
+
+.order-btn:hover {
+  color: white;
+  background-color: rgb(22, 96, 214);
+}
+
+.form-control {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  margin: 1rem;
+  font-size: 1rem;
+
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 50%;
+  outline: none;
+}
