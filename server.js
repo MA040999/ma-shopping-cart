@@ -23,7 +23,9 @@ if (isProduction) {
   app.use(express.static(path.join(__dirname, "build")));
 
   // express will serve up the front-end index.html file if it doesn't recognize the route
-  // app.get("*", (req, res) => res.sendFile(resolve(`./build/index.html`)));
+  app.get("*", (req, res) =>
+    res.sendFile(path.join(__dirname, `build/index.html`))
+  );
 }
 
 app.listen(PORT, () => {
