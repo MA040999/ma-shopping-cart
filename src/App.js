@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2 className="logo">CHASE UP</h2>
+      <h2 className="logo">MA Shopping Cart</h2>
       <div style={{ display: "flex" }}>
         <input
           className="form-control"
