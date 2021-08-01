@@ -5,7 +5,7 @@ import axios from "axios";
 const app = axios.create({
   baseURL:
     process.env.NODE_ENV === "production"
-      ? `http://localhost:4000/`
+      ? process.env.DOMAIN
       : "http://localhost:4000/",
   withCredentials: true,
 });

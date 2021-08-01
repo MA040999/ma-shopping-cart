@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Products from "./components/Products";
 import Cart from "./components/Cart";
-import axios from "axios";
+import app from ".././axiosConfig";
 
 export const SelectedProductsContext = React.createContext([[], () => []]);
 export const QuantitiesContext = React.createContext([[], () => []]);
@@ -25,14 +25,14 @@ function App() {
 
   let handleCheckOut = () => {
     if (selectedProducts.length > 0) {
-      axios
+      app
         .patch("/api/products/updateQ", {
           selectedProducts: selectedProducts,
           quantities: quantities,
         })
         .then((res) => {
           setUpdatedProducts(res.data);
-          axios
+          app
             .post("/api/orders/add", {
               selectedProducts: selectedProducts,
               quantities: quantities,

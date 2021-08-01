@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(
   cors({
-    origin: isProduction ? "http://localhost:5000" : "http://localhost:3000",
+    origin: isProduction ? process.env.DOMAIN : "http://localhost:3000",
     credentials: true,
   })
 );

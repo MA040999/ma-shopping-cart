@@ -1,4 +1,4 @@
-import axios from "axios";
+import app from ".././axiosConfig";
 import React, { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
 
@@ -30,11 +30,11 @@ function Products(props) {
 
   useEffect(() => {
     if (searchedItem === "") {
-      axios.get("/api/products/all").then((products) => {
+      app.get("/api/products/all").then((products) => {
         setProducts(products.data);
       });
     } else {
-      axios
+      app
         .get(`/api/products/search`, {
           params: {
             search: searchedItem,

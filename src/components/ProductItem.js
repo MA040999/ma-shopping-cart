@@ -1,4 +1,4 @@
-import axios from "axios";
+import app from ".././axiosConfig";
 import React, { useContext } from "react";
 
 import { SelectedProductsContext } from "../App";
@@ -11,7 +11,7 @@ function ProductItem(props) {
 
   let handleProductClick = (pid) => {
     if (!selectedProducts.some((p) => p.pid === pid)) {
-      axios
+      app
         .get("/api/products/addCart", {
           params: {
             pid: pid,
