@@ -1,4 +1,4 @@
-import app from ".././axiosConfig";
+import app from "../axiosConfig";
 import React, { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
 

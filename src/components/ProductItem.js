@@ -1,4 +1,4 @@
-import app from ".././axiosConfig";
+import app from "../axiosConfig";
 import React, { useContext } from "react";
 
 import { SelectedProductsContext } from "../App";
