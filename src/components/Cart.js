@@ -116,9 +116,9 @@ function Cart() {
           </tr>
         </tfoot>
       </table>
-      <div>
+      {/* <div>
         <pre>{JSON.stringify(quantities, null, 2)}</pre>
-      </div>
+      </div> */}
     </div>
   );
 }
